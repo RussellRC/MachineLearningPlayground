@@ -8,7 +8,7 @@ import pandas as pd
 # Load the dataset
 from sklearn import datasets
 
-X = pd.read_csv('titanic_data.csv')
+X = pd.read_csv('resources/titanic_data.csv')
 
 X = X._get_numeric_data()
 y = X['Survived']
