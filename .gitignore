@@ -1,2 +1,10 @@
 .project
 .pydevproject
+/confusion_matrix_play.pyc
+/learning_curve_play.pyc
+/learning_curve_play2.pyc
+/naive_bayes.pyc
+/one_hot_encoding.pyc
+/pandas_play.pyc
+/play.pyc
+/transcoder_play.pyc
