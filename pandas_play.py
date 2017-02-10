@@ -25,6 +25,8 @@ olympic_points_df = DataFrame({'country_name':countries, 'points':points})
 
 
 
+
+
 ohe = OneHotEncoder()
 label_encoder = LabelEncoder()
 

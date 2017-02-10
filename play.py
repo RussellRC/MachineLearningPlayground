@@ -7,7 +7,11 @@ from sklearn.preprocessing import MinMaxScaler
 from sklearn.preprocessing import RobustScaler
 from sklearn.preprocessing import StandardScaler
 
+from sklearn.utils import resample
+
+
 import matplotlib.pyplot as plt
+from sklearn.decomposition.tests.test_nmf import random_state
 
 
 # def do_stuff():
@@ -52,3 +56,15 @@ print transformed_data
 #     plt.scatter(i[0], i[1], color="b")
 #     plt.scatter(j[0], j[1], color="r")
 # plt.show()
+
+
+
+print numpy.arange(5,11)
+
+x = [1, 2, 3, 4, 5]
+y = [-1, -2, -3, -4, -5]
+x1, y1 = resample(x, y, n_samples=3, random_state=42)
+print x
+print y
+print x1
+print y1
