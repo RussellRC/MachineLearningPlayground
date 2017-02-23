@@ -3,7 +3,6 @@ import pandas as pd
 
 import visuals as vs
 import matplotlib.pyplot as pl
-from sklearn.decomposition.tests.test_nmf import random_state
 
 pd.set_option('display.width', 800)
 
@@ -263,8 +262,12 @@ true_centers = np.exp(log_centers)
 segments = ['Segment {}'.format(i) for i in range(0,len(centers))]
 true_centers = pd.DataFrame(np.round(true_centers), columns = data.keys())
 true_centers.index = segments
+print "true_centers"
 print true_centers
-
+print "\ntrue_centers - data.mean().round()"
+print true_centers - data.mean().round()
+print "\ntrue_centers - data.median().round()"
+print true_centers - data.median().round()
 
 vs.channel_results(reduced_data, outliers, pca_samples)
 
